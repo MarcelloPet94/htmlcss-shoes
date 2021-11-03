@@ -5,6 +5,10 @@
     font-family: 'Azeret Mono', monospace;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 a {
     color:#010101;
     text-decoration: none;
