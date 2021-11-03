@@ -4,7 +4,8 @@
     box-sizing: border-box;
 }
 
-main div {
+main div:not(.container_text) {
+    position: relative;
     width: 100vw;
     height: 100vh;
 }
@@ -12,3 +13,17 @@ main div {
 main div:nth-child(1) {background-color: #ff0000;}
 main div:nth-child(2) {background-color: #008008;}
 main div:nth-child(3) {background-color: #ffff1c;}
+
+main div img {
+    position: relative;
+    width: 50vw;
+    left: 25vw;
+    top: 15vh;
+}
+
+.container_text {
+    height: 30vh;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
