@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Azeret Mono', monospace;
 }
 
 main div:not(.container_text) {
@@ -10,20 +11,30 @@ main div:not(.container_text) {
     height: 100vh;
 }
 
-main div:nth-child(1) {background-color: #ff0000;}
-main div:nth-child(2) {background-color: #008008;}
-main div:nth-child(3) {background-color: #ffff1c;}
+main div:not(.container_text):nth-child(1) {background-color: #ff0000;}
+main div:not(.container_text):nth-child(2) {background-color: #008008;}
+main div:not(.container_text):nth-child(3) {background-color: #ffff1c;}
 
 main div img {
     position: relative;
     width: 50vw;
     left: 25vw;
-    top: 15vh;
+    top: 5vh;
 }
 
 .container_text {
+    width: 50vw;
     height: 30vh;
     position: absolute;
-    left: 0;
+    left: 25vw;
     bottom: 0;
 }
+
+.container_text h3 {
+    font-size: 3vw;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.text1, .text2 {color: #ffff1c;}
+.text3 {color: #008008;}
