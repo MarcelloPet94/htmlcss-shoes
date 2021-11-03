@@ -5,6 +5,28 @@
     font-family: 'Azeret Mono', monospace;
 }
 
+a {
+    color:#010101;
+    text-decoration: none;
+}
+
+nav {
+    position: fixed;
+    right: 0;
+    background-color: green;
+    z-index: 2;
+}
+
+nav ul li{
+    display: inline;
+    margin-right: 16px;
+}
+
+nav ul li a {
+
+    line-height: 80px;
+}
+
 main div:not(.container_text) {
     position: relative;
     width: 100vw;
@@ -23,11 +45,9 @@ main div img {
 }
 
 .container_text {
-    width: 50vw;
+    width: 100vw;
     height: 30vh;
-    position: absolute;
-    left: 25vw;
-    bottom: 0;
+    padding: 0 5vw;
 }
 
 .container_text h3 {
